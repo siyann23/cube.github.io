@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dork</title>
+    <style>
+        h1{
+            color: rgb(103, 16, 16);
+        }
+        p{
+            color: rgb(71, 43, 6);
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+
+</head>
+<body>
+    <body style ="background-color: darkolivegreen;">
+
+    <div>
+    <h1 class="header_text">
+        I MISS YOU!
+    </h1>
+    </div>
+    <p>
+        I love spending time with you . I would love to meet you . Let's go somewhere.
+    </p>
+
+    <br>
+
+    <p>
+    Would you like to go on a date with me?
+    </p>
+    <div class="buttons">
+        <button class="btn" id="YesButton" onclick="nextpage()">Yes</button>
+        <button class="btn" id="NoButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+        <script>
+            function nextpage(){
+                window.location.href="clover.html";
+            }
+
+            function moveButton(){
+                var x= Math.random() * (window.innerWidth- document.getElementById('NoButton').offsetwidth)-65;
+                var y= Math.random() * (window.innerWidth- document.getElementById('NoButton').offsetheight)-40;
+                document.getElementById('NoButton').style.left=`${x}px`;
+                document.getElementById('NoButton').style.top=`${y}px`;
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
